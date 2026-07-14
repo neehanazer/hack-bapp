@@ -36,9 +36,7 @@ const Hack=mongoose.model("Hackathon Entry",new mongoose.Schema(
 
     }
 ))
-app.get("/test",(req,res) => {
-    res.send("hello")
-})
+
 
 app.post("/add-team",async (req,res)=>{
     await Hack.create(req.body)
